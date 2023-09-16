@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+input, button{
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(0, 0, 0, 0.703);
+}
+.container{
+    min-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todoList{
+    margin-top: 48px;
+}
+
+.todoList h1{
+    font-size: 40px;
+    color: #ebebeb;
+}
+.todoList form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+
+margin-top: 24px;
+}
+.todoList form .inputEl{
+width: 600px;
+
+padding: 12px 0 12px 4px;
+
+border: 2px solid transparent;
+transition: all 0.3s ease-in-out;
+outline: none;
+font-weight: 400;
+border-radius: 6px;
+
+font-size: 16px;
+font-weight: 400;
+}
+.todoList form .inputEl:hover{
+border: 2px solid #0186faa7;
+} 
+.todoList form .buttonEl{
+    width: 600px;
+
+    padding: 12px 0 12px 4px;
+    background-color: transparent;
+    border: #ebebeb 1px solid;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: #ebebeb;
+    font-size: 16px;
+    font-weight: 400;
+}
+.todoList form .buttonEl:hover{
+    border: 2px solid #0186faa7;
+    color: #0186faa7;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.lists .list{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap:8px;
+    width: 600px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #ebebeb;
+    margin-top: 20px;
+}
+
+.lists .list .actions .remove{
+    padding: 4px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 8px;
+    background-color: #fa0101a7;
+}
+.lists .list .actions .remove:hover{
+    background-color: #c9111160;
+}
+.lists .list .actions .done{
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 8px;
+    background-color: #04fa25a7;
+}
+.lists .list .actions .done:hover{
+    background-color: #00ff4c54;
+}
+.active{
+    border: 2px solid #1afa01;
+}
+.doneActive{
+    display: none;
+    
+}
